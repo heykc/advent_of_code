@@ -6,7 +6,6 @@ const color_maxes = {
   green: 13,
   blue: 14,
 };
-const test = 'Game 511: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green';
 const id_regex = new RegExp(/Game (\d+): /, 'd');
 
 const parse_id = (line) => {
