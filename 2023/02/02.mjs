@@ -49,7 +49,7 @@ const check_impossible_values = (line) => {
   const max_color_values = get_max_values(game);
   const has_impossible_value = Object
     .entries(max_color_values)
-    .some(([color, amt]) => color_maxes[color] < amt)
+    .some(([color, amt]) => color_maxes[color] < amt);
   
   return has_impossible_value
     ? 0

@@ -27,7 +27,7 @@ function first_last_digits(line) {
  */
 function add_lines(input, fn) {
   const lines = input.trim().split`\n`;
-  return lines.reduce((total, line) => total + fn(line), 0)
+  return lines.reduce((total, line) => total + fn(line), 0);
 }
 
 console.log(add_lines(data, first_last_digits));
@@ -67,7 +67,7 @@ function get_line_number(line) {
    */
   const last_num = line.match(last_num_regex)[2];
 
-  return +`${num_map[first_num] ?? first_num}${num_map[last_num] ?? last_num}`
+  return +`${num_map[first_num] ?? first_num}${num_map[last_num] ?? last_num}`;
 }
 
 console.log(add_lines(data, get_line_number));
